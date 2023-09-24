@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sepia-tone: rgb(239, 213, 177);
+  --main-bg-color: rgb(37, 32, 28);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 32, 28);
+}
+
+main {
+  background-color: rgb(37, 32, 28);
+  border: 30px solid rgb(240, 240, 221);
+  width: 600px;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle-container {
+  margin-bottom: 10px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border: 1px solid var(--sepia-tone);
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.yellow {
+  position: absolute;
+  background-color: yellow;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
+  box-shadow: 0 0 5px red;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  position: relative;
+  border: 9px solid var(--main-bg-color);
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px var(--main-bg-color);
+}
+
+.inner-blue {
+  position: absolute;
+  border: 2px solid lightblue;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px blue, inset 0 0 5px blue;
+}
+
+.circle-label {
+  margin-top: 7%;
+  font-size: 0.95rem;
+  font-family: "faustina";
+  margin-bottom: 1px;
+}
+
+/* fonts */
+
+p {
+  text-align: center;
+  color: var(--sepia-tone);
+}
+
+.info {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  width: 100%;
+}
+
+.nagroda {
+  font-weight: 800;
+  font-size: 0.95rem;
+  transform: scale(1.37, 1);
+}
+
+.mff-cannes {
+  font-family: "Cormorant Unicase";
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.radziecka {
+  font-weight: lighter;
+  font-size: 0.75rem;
+  word-spacing: 4px;
+  letter-spacing: 1.3px;
+}
+
+span {
+  padding: 5px;
+  margin: -4px;
+}
+
+.stanislawa {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--sepia-tone),
+    var(--main-bg-color),
+    var(--sepia-tone)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#s1 {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  width: 1.5rem;
+  background: linear-gradient(
+    to bottom right,
+    var(--sepia-tone),
+    var(--sepia-tone),
+    var(--main-bg-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#s2 {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--sepia-tone),
+    var(--main-bg-color),
+    var(--sepia-tone),
+    var(--sepia-tone)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#s3 {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--main-bg-color),
+    var(--main-bg-color),
+    var(--sepia-tone),
+    var(--sepia-tone)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#s4 {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--main-bg-color),
+    var(--sepia-tone),
+    var(--sepia-tone),
+    var(--main-bg-color),
+    var(--sepia-tone),
+    var(--sepia-tone)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#s5 {
+  font-family: "Arizonia";
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--main-bg-color),
+    var(--sepia-tone)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.rezyseria {
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  transform: scale(1.17, 1);
+}
+
+.w-rolach {
+  font-family: "faustina";
+  font-size: 0.8rem;
+  letter-spacing: 1.25px;
+}
+
+.produkcja {
+  font-size: 0.75rem;
+  font-weight: lighter;
+  font-family: "Cormorant Unicase";
+}
+
+/* title */
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.title-letter {
+  position: relative;
+  background-color: var(--sepia-tone);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.line-horizontal {
+  position: absolute;
+  background-color: var(--main-bg-color);
+  width: 50%;
+  height: 5px;
+  top: 50%;
+}
+
+.line-vertical {
+  position: absolute;
+  background-color: var(--main-bg-color);
+  width: 5px;
+  left: 48%;
+  height: 100%;
+}
+
+#s-right {
+  right: 0;
+  top: 36%;
+}
+
+#s-left {
+  left: 0;
+  top: 56%;
+}
+
+#l {
+  border-radius: 0 0 0 45px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.l-cover {
+  background-color: var(--main-bg-color);
+  width: 2.75rem;
+  height: 3.25rem;
+}
+
+#i {
+  width: 2.25rem;
+  border-radius: 0;
+}
+
+.r-container {
+  position: relative;
+  width: 35px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+#r-top {
+  position: absolute;
+  background-color: var(--sepia-tone);
+  width: 2.25rem;
+  height: 2.7rem;
+  border-radius: 0 50px 50px 0;
+  margin-left: 5px;
+}
+
+#r-bot {
+  position: absolute;
+  background-color: var(--sepia-tone);
+  top: 65%;
+  width: 2.25rem;
+  height: 2.95rem;
+  border-radius: 15px 50px 0 0;
+  margin-left: 5px;
+}
+
+#a {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-bottom: 4.5rem solid var(--sepia-tone);
+  top: -2rem;
+  left: 2.25rem;
+}
+
+.a-line {
+  position: absolute;
+  background-color: var(--main-bg-color);
+  width: 8px;
+  height: 2.65rem;
+  top: 2.5rem;
+  right: 5px;
+  transform: skew(30deg, 30deg);
+}
+
+.l-a {
+  position: relative;
+  margin-right: 2.25rem;
+}
